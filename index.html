@@ -7,4 +7,50 @@
 <section class="gallery" id="gallery"><h2 class="section-title">Our Beautiful Moments ♡</h2><p class="section-sub">Little memories, genuine smiles, and moments I want to remember.</p><div class="gallery-grid"><article class="gallery-card"><img src="assets/raksha1.jpg" alt="A lovely moment together"><p>A memory to treasure</p></article><article class="gallery-card"><img src="assets/raksha2.jpg" alt="Smiling together in warm lights"><p>My favourite smile</p></article><article class="gallery-card"><img src="assets/raksha3.jpg" alt="A happy selfie together"><p>Little moments, big feelings</p></article><article class="gallery-card"><img src="assets/raksha4.jpg" alt="Together outdoors"><p>Side by side</p></article><article class="gallery-card"><img src="assets/raksha5.jpg" alt="A playful moment together"><p>Your playful side</p></article><article class="gallery-card"><img src="assets/raksha6.jpg" alt="A sweet car selfie"><p>Just us ♥</p></article><article class="gallery-card"><img src="assets/raksha7.jpg" alt="A warm moment together"><p>More memories to come</p></article></div></section>
 <section class="letter" id="letter"><h2 class="section-title">My promise to you ♥</h2><p class="section-sub">Not a perfect promise—an honest one.</p><div class="letter-card"><p>Dear Shree Raksha,</p><p>I want to keep learning about you, listening when you need someone to talk to, laughing with you over the smallest things, and supporting the dreams that matter to you. I want us to be able to speak honestly, feel comfortable being ourselves, and build trust through our actions.</p><p>I won’t ask you to promise a future before you’re ready. I only hope to show you, with patience and care, that my feelings are sincere. Whatever you feel, I will respect your honesty.</p><p class="signature">With all my heart, Harsha ♥</p></div></section>
 <section class="proposal" id="proposal"><div class="eyebrow" style="color:#ffc4d0">One question, from the heart</div><h2 class="section-title">Shree Raksha, would you give us a chance? ♡</h2><p>I care about you, and I would love the chance to walk beside you, make you smile, support your dreams, and discover what our story could become—one beautiful step at a time.</p><p style="font-style:italic">There’s no pressure to answer a certain way. I just wanted you to know how I feel.</p><div class="proposal-actions"><button class="pill yes" onclick="answer('yes')">♥ Yes, let’s give this a chance</button><button class="pill maybe" onclick="answer('maybe')">♡ I need a little more time</button></div><div class="response" id="response" aria-live="polite"></div><p class="privacy-note">Your choice will be submitted to Harsha at harsha4480@gmail.com. Please only submit when you’re comfortable.</p></section><footer class="footer">Made with love, especially for Shree Raksha <span style="color:#d8325b">♥</span><br>A little page for someone very special.</footer>
-<script>const EMAIL_TO="harsha4480@gmail.com";async function answer(choice){const yes=choice==="yes";const text=yes?"Thank you for telling me how you feel. I’m happy to take this one step at a time with you. ♥":"That’s completely okay. Take the time you need; I respect your feelings and your pace. ♡";const el=document.getElementById("response");el.textContent=text+" Sending your response…";const form=new FormData();form.append("_subject","Shree Raksha website response");form.append("_template","table");form.append("_captcha","false");form.append("Recipient",EMAIL_TO);form.append("Response",yes?"Yes, let's give this a chance":"I need a little more time");form.append("Page",window.location.href);form.append("Submitted at",new Date().toLocaleString());try{const res=await fetch("https://formsubmit.co/ajax/"+EMAIL_TO,{method:"POST",body:form,headers:{"Accept":"application/json"}});if(!res.ok)throw new Error("Email service returned an error");const data=await res.json();if(data.success==="true"||data.success===true){el.textContent=text+" ♥ Your response has been submitted."}else{throw new Error("Email activation may be required")}}catch(e){el.textContent=text+" ♥ Email submission could not be confirmed. Please try again later.";console.error(e)}}</script></body></html>
+<script>
+const EMAIL_TO = "harsha4480@gmail.com";
+async function answer(choice) {
+  const yes = choice === "yes";
+  const responseText = yes
+    ? "Yes, let's give this a chance"
+    : "I need a little more time";
+  const message = yes
+    ? "Thank you for telling me how you feel. I’m happy to take this one step at a time with you. ♥"
+    : "That’s completely okay. Take the time you need; I respect your feelings and your pace. ♡";
+  const el = document.getElementById("response");
+  el.textContent = "Submitting your response…";
+  const form = new FormData();
+  form.append("_subject", "Shree Raksha website response");
+  form.append("_template", "table");
+  form.append("_captcha", "false");
+  form.append("Response", responseText);
+  form.append("Submitted at", new Date().toLocaleString());
+  form.append("Website URL", window.location.href);
+
+  try {
+    const res = await fetch("https://formsubmit.co/ajax/" + EMAIL_TO, {
+      method: "POST",
+      body: form,
+      headers: { "Accept": "application/json" }
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok || !(data.success === true || data.success === "true")) {
+      throw new Error(data.message || "Email service did not confirm the submission.");
+    }
+    el.textContent = message + " ♥ Your response was accepted by the email service. If this is the first submission, check " + EMAIL_TO + " (including Spam) for an activation email from FormSubmit.";
+  } catch (err) {
+    console.error("FormSubmit error:", err);
+    el.textContent = message + " ♥ Automatic email could not be confirmed. Use the email link below to send the response manually.";
+    const link = document.createElement("a");
+    link.href = "mailto:" + EMAIL_TO
+      + "?subject=" + encodeURIComponent("Shree Raksha website response")
+      + "&body=" + encodeURIComponent("Shree Raksha's response: " + responseText
+        + "\nSubmitted at: " + new Date().toLocaleString()
+        + "\nWebsite: " + window.location.href);
+    link.textContent = "Tap here to email Harsha";
+    link.style.cssText = "display:inline-block;margin:12px;padding:10px 16px;background:#fff4f3;color:#741632;border-radius:20px;font:14px Poppins,sans-serif";
+    el.appendChild(document.createElement("br"));
+    el.appendChild(link);
+  }
+}
+</script></body></html>
