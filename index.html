@@ -1,11 +1,11 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#8e173d">
-<title>For Shree Raksha ♥</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#741632">
+<title>I'm Sorry, Shree Raksha ❤️</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -31,420 +31,260 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-a { color: inherit; text-decoration: none; }
-
 .nav {
-  position: sticky;
-  top: 0;
-  z-index: 5;
+  padding: 18px 7%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px clamp(16px,5vw,70px);
-  background: #fff8f4ed;
-  backdrop-filter: blur(12px);
+  background: #fff8f4;
   border-bottom: 1px solid #f5ccd4;
 }
 
 .brand {
   font-size: 23px;
-  font-weight: 700;
+  font-weight: bold;
   color: var(--wine);
 }
 
 .brand span { color: var(--rose); }
 
-.navlinks {
-  display: flex;
-  gap: 22px;
-  font-size: 14px;
+.nav-note {
+  font: 12px Poppins, sans-serif;
+  color: #a05a6c;
 }
-
-.navlinks a:hover { color: var(--rose); }
-
-.pill {
-  display: inline-block;
-  border: 0;
-  border-radius: 999px;
-  padding: 12px 20px;
-  background: linear-gradient(135deg,#e64a6c,#b91643);
-  color: white;
-  box-shadow: 0 8px 22px #b9164325;
-  font-family: Poppins,sans-serif;
-  font-size: 13px;
-  cursor: pointer;
-  transition: .25s;
-}
-
-.pill:hover { transform: translateY(-2px); }
 
 .hero {
-  min-height: 610px;
+  min-height: 590px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.1fr .9fr;
   align-items: center;
-  gap: 4%;
-  padding: 55px clamp(20px,7vw,100px);
-  position: relative;
-  overflow: hidden;
+  gap: 45px;
+  padding: 65px 9%;
   background:
-    radial-gradient(ellipse at 70% 20%,#fff 0,transparent 34%),
-    linear-gradient(120deg,#f9d6dc,#fff0e9 55%,#f5c5ce);
-}
-
-.hero:before {
-  content: "♡ ♥ ♡";
-  position: absolute;
-  right: 5%;
-  top: 7%;
-  font-size: 44px;
-  color: #df5774;
-  opacity: .18;
-  letter-spacing: 20px;
+    radial-gradient(circle at 80% 20%, white, transparent 35%),
+    linear-gradient(120deg,#f9d6dc,#fff0e9,#f5c5ce);
 }
 
 .eyebrow {
-  font: italic 22px 'Great Vibes',cursive;
+  font: 30px 'Great Vibes', cursive;
   color: var(--rose);
 }
 
 h1 {
-  font: clamp(56px,7vw,100px) 'Great Vibes',cursive;
+  font: clamp(55px,7vw,88px) 'Great Vibes', cursive;
   color: var(--wine);
   font-weight: 400;
-  margin: 8px 0 0;
   line-height: 1.15;
+  margin: 12px 0;
 }
 
 h1 span { color: var(--rose); }
 
 .subtitle {
-  font-size: 14px;
-  letter-spacing: 4px;
+  font: 12px Poppins, sans-serif;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--wine);
-  margin: 16px 0;
+  margin: 20px 0;
 }
 
 .intro {
+  max-width: 580px;
   font-size: 18px;
-  line-height: 1.8;
-  max-width: 570px;
-}
-
-.scribble {
-  font: 30px 'Great Vibes',cursive;
-  color: var(--rose);
-  margin: 20px 0 28px;
+  line-height: 1.9;
 }
 
 .hero-photo {
-  position: relative;
-  max-width: 460px;
-  width: 100%;
-  margin: auto;
-  transform: rotate(2deg);
-  background: #fff;
+  background: white;
   padding: 12px 12px 48px;
-  box-shadow: 0 24px 55px #65182c30;
-  border-radius: 4px;
+  transform: rotate(2deg);
+  box-shadow: 0 25px 55px #65182c30;
+  max-width: 410px;
+  margin: auto;
+  position: relative;
 }
 
 .hero-photo img {
   display: block;
   width: 100%;
-  height: 420px;
+  height: 430px;
   object-fit: cover;
-  border-radius: 2px;
 }
 
 .hero-photo figcaption {
   position: absolute;
-  bottom: 12px;
-  left: 10px;
-  right: 10px;
+  bottom: 10px;
+  width: calc(100% - 24px);
   text-align: center;
-  font: 29px 'Great Vibes',cursive;
+  font: 29px 'Great Vibes', cursive;
   color: var(--wine);
 }
 
-.float-heart {
-  position: absolute;
-  font-size: 46px;
-  color: #d8325b;
-  animation: float 4s ease-in-out infinite;
-}
-
-.float-heart.one { right: 0; top: 5%; }
-.float-heart.two { left: -5%; bottom: 18%; animation-delay: 1s; }
-
-@keyframes float {
-  50% { transform: translateY(-12px) rotate(8deg); }
-}
-
-.reasons {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 14px;
-  padding: 28px clamp(16px,7vw,100px);
+.apology {
+  padding: 85px 20px;
   background: #fffaf8;
 }
 
-.reason {
-  border: 1px solid #f5cbd2;
-  border-radius: 18px;
-  padding: 22px 16px;
-  text-align: center;
-  background: #fffaf9;
-  box-shadow: 0 7px 25px #8f173d08;
-}
-
-.reason .icon { font-size: 32px; color: var(--rose); }
-
-.reason h3 {
-  margin: 8px 0;
-  color: var(--wine);
-  font-size: 18px;
-}
-
-.reason p { margin: 0; line-height: 1.5; font-size: 14px; }
-
-section { padding: 70px clamp(20px,8vw,110px); }
-
 .section-title {
   text-align: center;
-  font: clamp(36px,5vw,55px) 'Great Vibes',cursive;
+  font: clamp(40px,6vw,62px) 'Great Vibes', cursive;
   color: var(--wine);
-  font-weight: 400;
-  margin: 0 0 10px;
+  margin: 0 0 15px;
 }
 
 .section-sub {
   text-align: center;
-  margin: 0 auto 30px;
-  max-width: 700px;
-  line-height: 1.7;
-}
-
-.story {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-  background: linear-gradient(135deg,#ffe8eb,#fff8f4);
-}
-
-.story-text { font-size: 17px; line-height: 1.9; }
-
-.quote {
-  background: #fffaf8;
-  border: 1px solid #f4ccd3;
-  border-radius: 24px;
-  padding: 35px;
-  text-align: center;
-  font: 30px 'Great Vibes',cursive;
-  color: var(--wine);
-  box-shadow: 0 15px 40px #7416320d;
-}
-
-.gallery { background: #fffaf8; }
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 20px;
-  max-width: 1100px;
-  margin: 32px auto 0;
-}
-
-.gallery-card {
-  background: white;
-  padding: 10px 10px 20px;
-  box-shadow: 0 12px 30px #6d19301b;
-  border-radius: 5px;
-  transform: rotate(var(--tilt,1deg));
-  transition: .25s;
-}
-
-.gallery-card:nth-child(even) { --tilt: -1.4deg; }
-
-.gallery-card:hover {
-  transform: translateY(-5px) rotate(0);
-  box-shadow: 0 18px 35px #6d19302a;
-}
-
-.gallery-card img {
-  width: 100%;
-  height: 330px;
-  object-fit: cover;
-  display: block;
-  border-radius: 3px;
-}
-
-.gallery-card p {
-  text-align: center;
-  font: 27px 'Great Vibes',cursive;
-  color: var(--wine);
-  margin: 12px 0 0;
-}
-
-.letter {
-  background: linear-gradient(135deg,#f9d9df,#fff4ef);
-  text-align: center;
+  font-size: 15px;
+  color: #a05a6c;
+  margin-bottom: 38px;
 }
 
 .letter-card {
-  max-width: 800px;
+  max-width: 820px;
   margin: auto;
-  padding: 38px clamp(22px,5vw,55px);
-  background: #fffaf7;
+  padding: 45px clamp(23px,6vw,65px);
+  background: white;
   border: 1px solid #f2c3cd;
-  border-radius: 10px;
-  box-shadow: 0 20px 45px #74163212;
-  text-align: left;
+  border-radius: 12px;
+  box-shadow: 0 20px 55px #74163212;
   font-size: 17px;
-  line-height: 1.9;
+  line-height: 2;
+}
+
+.letter-card p { margin: 0 0 22px; }
+
+.highlight {
+  color: var(--rose);
+  font-weight: 600;
 }
 
 .signature {
-  font: 38px 'Great Vibes',cursive;
+  font: 42px 'Great Vibes', cursive;
   color: var(--rose);
   text-align: right;
+  margin-top: 35px !important;
 }
 
-.proposal {
-  position: relative;
+.promise {
+  padding: 75px 20px;
   text-align: center;
-  color: #fff0f2;
-  background:
-    linear-gradient(120deg,#300b20e8,#7e1736e8),
-    url('assets/raksha2.jpg') center 42%/cover fixed;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  background: linear-gradient(135deg,#ffe8eb,#fff5f0);
 }
 
-.proposal .section-title {
-  color: #fff0f2;
-  font-size: clamp(42px,6vw,70px);
+.promise-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  max-width: 950px;
+  margin: 40px auto 0;
 }
 
-.proposal p {
-  max-width: 780px;
-  margin: 18px auto;
-  line-height: 1.9;
-  font-size: 18px;
+.promise-item {
+  background: #fffaf8;
+  padding: 30px 18px;
+  border: 1px solid #f4ccd3;
+  border-radius: 18px;
 }
 
-.proposal-actions {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin: 28px 0;
+.promise-item .icon {
+  font-size: 35px;
+  color: var(--rose);
 }
 
-.yes {
-  background: linear-gradient(135deg,#ff7997,#d8325b);
-  font-size: 15px;
-  padding: 15px 24px;
-}
-
-.maybe {
-  background: #fff4f3;
+.promise-item h3 {
   color: var(--wine);
-  border: 1px solid #ffd5de;
-  box-shadow: none;
-  font-size: 15px;
-  padding: 15px 24px;
+  font-size: 19px;
 }
 
-/* New rejection button */
-.reject {
-  background: #fff;
-  color: #8b263e;
-  border: 1px solid #f1b7c3;
-  box-shadow: none;
-  font-size: 15px;
-  padding: 15px 24px;
+.promise-item p {
+  font-size: 14px;
+  line-height: 1.8;
 }
 
-.reject:hover { background: #fbe4e9; }
+.question {
+  padding: 95px 20px;
+  text-align: center;
+  color: white;
+  background:
+    linear-gradient(120deg,#300b20ed,#7e1736ed),
+    url('assets/raksha2.jpg') center/cover;
+}
+
+.question .section-title {
+  color: #fff0f2;
+  font-size: clamp(44px,7vw,75px);
+}
+
+.question-text {
+  max-width: 750px;
+  margin: 25px auto;
+  font-size: 18px;
+  line-height: 2;
+  color: #ffe5eb;
+}
+
+.reconsider-btn {
+  display: inline-block;
+  margin: 25px auto;
+  padding: 19px 36px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg,#ff8ba5,#d8325b);
+  color: white;
+  font: 15px Poppins, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 12px 30px #0003;
+  transition: .3s;
+}
+
+.reconsider-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 18px 35px #0004;
+}
 
 .response {
-  min-height: 50px;
-  margin: 20px auto 0;
-  max-width: 760px;
-  color: #ffe0e8;
-  font: 30px 'Great Vibes',cursive;
+  max-width: 650px;
+  min-height: 55px;
+  margin: 20px auto;
+  font: 30px 'Great Vibes', cursive;
+  color: #ffd5df;
 }
 
-.privacy-note {
-  font: 12px Poppins,sans-serif;
-  opacity: .8;
+.small-note {
+  font: 12px Poppins, sans-serif;
+  color: #f8cbd6;
+  line-height: 1.8;
+  max-width: 550px;
+  margin: 20px auto;
 }
 
 .footer {
+  padding: 30px 15px;
   text-align: center;
-  padding: 28px;
   background: #fff8f4;
   color: #9d5263;
   font-size: 13px;
 }
 
 @media(max-width:800px) {
-  .navlinks { display: none; }
-
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
-    padding-top: 42px;
   }
 
-  .intro { margin-left: auto; margin-right: auto; }
-
-  .hero-photo { max-width: 390px; margin-top: 28px; }
-
-  .hero-photo img { height: 390px; }
-
-  .reasons { grid-template-columns: repeat(2,1fr); }
-
-  .story { grid-template-columns: 1fr; }
-
-  .gallery-grid { grid-template-columns: repeat(2,1fr); }
-
-  .gallery-card img { height: 270px; }
-
-  .proposal { background-attachment: scroll; }
+  .hero-photo { margin-top: 30px; }
+  .promise-grid { grid-template-columns: 1fr; }
 }
 
 @media(max-width:480px) {
+  .nav { padding: 15px; }
   .brand { font-size: 19px; }
-
-  .nav .pill { padding: 10px 13px; font-size: 11px; }
-
-  .hero { padding-left: 18px; padding-right: 18px; }
-
-  .hero-photo img { height: 320px; }
-
-  .reasons { gap: 8px; padding: 18px 12px; }
-
-  .reason { padding: 16px 9px; }
-
-  .gallery-grid { gap: 12px; }
-
-  .gallery-card { padding: 7px 7px 14px; }
-
-  .gallery-card img { height: 220px; }
-
-  .gallery-card p { font-size: 23px; }
-
-  section { padding: 52px 18px; }
-
-  .quote { font-size: 27px; padding: 25px; }
-
-  .proposal-actions { flex-direction: column; align-items: stretch; }
-
-  .proposal-actions .pill { width: 100%; }
+  .nav-note { font-size: 10px; }
+  .hero { padding: 45px 20px; }
+  .hero-photo img { height: 340px; }
+  .letter-card { padding: 30px 22px; }
+  .reconsider-btn { width: 100%; max-width: 330px; }
 }
 </style>
 </head>
@@ -452,309 +292,265 @@ section { padding: 70px clamp(20px,8vw,110px); }
 <body>
 
 <nav class="nav">
-  <a class="brand" href="#home">♥ Shree Raksha <span>♡</span></a>
-
-  <div class="navlinks">
-    <a href="#home">Home</a>
-    <a href="#story">Our Story</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#letter">My Promise</a>
-    <a href="#proposal">The Question</a>
-  </div>
-
-  <a class="pill" href="#proposal">♥ Always Yours</a>
+  <div class="brand">♥ Shree Raksha <span>♡</span></div>
+  <div class="nav-note">A letter from Harsha</div>
 </nav>
 
-<header class="hero" id="home">
-  <div class="hero-copy">
-    <div class="eyebrow">To my dearest</div>
+<header class="hero">
 
-    <h1>Shree Raksha <span>♡</span></h1>
+  <div>
+    <div class="eyebrow">A letter from my heart...</div>
 
-    <div class="subtitle">You make my world more beautiful</div>
+    <h1>I'm Sorry,<br>Shree Raksha <span>♡</span></h1>
+
+    <div class="subtitle">Some words I wish to tell you</div>
 
     <p class="intro">
-      Some people make ordinary moments feel extraordinary.
-      Your smile, your warmth, and the memories we share have a
-      special place in my heart. This little page is my way of
-      telling you how much you mean to me.
+      I know things haven't gone the way I hoped.
+      I may have made you feel overwhelmed when all
+      I wanted was to make you feel special.
+      I am sorry for that.
     </p>
 
-    <div class="scribble">
-      A little corner of my heart, made just for you ♥
-    </div>
-
-    <a class="pill" href="#proposal">A question from my heart ↓</a>
+    <div class="eyebrow">You deserve understanding, not pressure. ♥</div>
   </div>
 
-  <div style="position:relative">
-    <figure class="hero-photo">
-      <img src="assets/raksha2.jpg" alt="A special memory">
-      <figcaption>My favourite person ♥</figcaption>
-    </figure>
+  <figure class="hero-photo">
+    <img src="assets/raksha2.jpg" alt="A special memory">
+    <figcaption>A person I'll always wish happiness for ♥</figcaption>
+  </figure>
 
-    <span class="float-heart one">♡</span>
-    <span class="float-heart two">♥</span>
-  </div>
 </header>
 
-<div class="reasons">
-  <article class="reason">
-    <div class="icon">♡</div>
-    <h3>Beautiful Soul</h3>
-    <p>Your kindness makes the world softer.</p>
-  </article>
+<section class="apology">
 
-  <article class="reason">
-    <div class="icon">✧</div>
-    <h3>Inspiring</h3>
-    <p>You make me want to grow and be better.</p>
-  </article>
-
-  <article class="reason">
-    <div class="icon">❀</div>
-    <h3>Brings Happiness</h3>
-    <p>Your smile can brighten an ordinary day.</p>
-  </article>
-
-  <article class="reason">
-    <div class="icon">∞</div>
-    <h3>Always Special</h3>
-    <p>You matter to me in ways words can’t explain.</p>
-  </article>
-</div>
-
-<section class="story" id="story">
-  <div>
-    <h2 class="section-title">A little about you ♡</h2>
-
-    <p class="story-text">
-      I admire your smile, your warmth, and the little things that
-      make you uniquely you. I’m grateful for the time we spend
-      together and for every memory that makes me smile afterwards.
-      I don’t want to rush your feelings; I want to understand you,
-      respect your pace, and let something meaningful grow naturally.
-    </p>
-  </div>
-
-  <div class="quote">
-    “In a world full of people, you are someone who makes my heart
-    feel a little more at home.”
-    <br><span style="color:#d8325b">♥</span>
-  </div>
-</section>
-
-<section class="gallery" id="gallery">
-  <h2 class="section-title">Our Beautiful Moments ♡</h2>
+  <h2 class="section-title">From the bottom of my heart ♥</h2>
 
   <p class="section-sub">
-    Little memories, genuine smiles, and moments I want to remember.
+    There are a few things I genuinely want you to know.
   </p>
 
-  <div class="gallery-grid">
-    <article class="gallery-card">
-      <img src="assets/raksha1.jpg" alt="A lovely memory">
-      <p>A memory to treasure</p>
-    </article>
-
-    <article class="gallery-card">
-      <img src="assets/raksha2.jpg" alt="A special moment">
-      <p>My favourite smile</p>
-    </article>
-
-    <article class="gallery-card">
-      <img src="assets/raksha3.jpg" alt="A happy memory">
-      <p>Little moments, big feelings</p>
-    </article>
-
-    <article class="gallery-card">
-      <img src="assets/raksha4.jpg" alt="A moment outdoors">
-      <p>Side by side</p>
-    </article>
-
-    <article class="gallery-card">
-      <img src="assets/raksha5.jpg" alt="A playful memory">
-      <p>Your playful side</p>
-    </article>
-
-    <article class="gallery-card">
-      <img src="assets/raksha6.jpg" alt="A sweet memory">
-      <p>Just us ♥</p>
-    </article>
-
-    <article class="gallery-card">
-      <img src="assets/raksha7.jpg" alt="Another special memory">
-      <p>More memories to come</p>
-    </article>
-  </div>
-</section>
-
-<section class="letter" id="letter">
-  <h2 class="section-title">My promise to you ♥</h2>
-
-  <p class="section-sub">Not a perfect promise—an honest one.</p>
-
   <div class="letter-card">
+
     <p>Dear Shree Raksha,</p>
 
     <p>
-      I want to keep learning about you, listening when you need
-      someone to talk to, laughing with you over the smallest things,
-      and supporting the dreams that matter to you. I want us to be
-      able to speak honestly, feel comfortable being ourselves, and
-      build trust through our actions.
+      First, <span class="highlight">I'm genuinely sorry.</span>
+      I realise that I may have put too much pressure on you
+      by trying to make everything happen quickly.
+      Perhaps I was so excited about the possibility of us
+      that I didn't give enough space to understand how you felt.
     </p>
 
     <p>
-      I won’t ask you to promise a future before you’re ready.
-      I only hope to show you, with patience and care, that my
-      feelings are sincere. Whatever you feel, I will respect
-      your honesty.
+      I never wanted you to feel that you had to make a decision
+      just because of my emotions, expectations or affection.
+      Your feelings matter just as much as mine.
     </p>
 
-    <p class="signature">With all my heart, Harsha ♥</p>
+    <p>
+      I know that liking someone and building a meaningful
+      connection takes time. It cannot be forced, planned
+      or rushed. I wish I had understood that better.
+    </p>
+
+    <p>
+      I still admire you. Your smile, your intelligence,
+      your caring nature and the little moments we've shared
+      mean something to me.
+    </p>
+
+    <p>
+      I'm not writing this to make you feel guilty or to
+      change your decision through emotions.
+      I'm writing because I genuinely regret the times
+      I may have made things difficult for you.
+    </p>
+
+    <p>
+      <span class="highlight">If there is even a little willingness
+      in your heart,</span> I would be grateful for another chance
+      to get to know each other slowly, naturally and without
+      any expectations or pressure.
+    </p>
+
+    <p>
+      And if your decision remains the same, I will respect it.
+      Your happiness matters, whatever you decide.
+    </p>
+
+    <p class="signature">With sincerity, Harsha ♥</p>
+
   </div>
+
 </section>
 
-<section class="proposal" id="proposal">
+<section class="promise">
+
+  <h2 class="section-title">What I have understood ♡</h2>
+
+  <p class="section-sub">
+    Sometimes, caring about someone also means learning to slow down.
+  </p>
+
+  <div class="promise-grid">
+
+    <article class="promise-item">
+      <div class="icon">♡</div>
+      <h3>No Pressure</h3>
+      <p>
+        I won't rush you into decisions or expect immediate answers.
+      </p>
+    </article>
+
+    <article class="promise-item">
+      <div class="icon">🌷</div>
+      <h3>More Understanding</h3>
+      <p>
+        I want to listen, understand your perspective
+        and respect your individuality.
+      </p>
+    </article>
+
+    <article class="promise-item">
+      <div class="icon">♥</div>
+      <h3>Let It Be Natural</h3>
+      <p>
+        If we both want this, let us build something
+        meaningful one step at a time.
+      </p>
+    </article>
+
+  </div>
+
+</section>
+
+<section class="question" id="reconsider">
+
   <div class="eyebrow" style="color:#ffc4d0">
-    One question, from the heart
+    Just one heartfelt request...
   </div>
 
   <h2 class="section-title">
-    Shree Raksha, would you give us a chance? ♡
+    Could You Consider Again? ♡
   </h2>
 
-  <p>
-    I care about you, and I would love the chance to walk beside you,
-    make you smile, support your dreams, and discover what our story
-    could become—one beautiful step at a time.
+  <p class="question-text">
+    Raksha, I know I cannot undo what has happened.
+    But I hope you can see that I am willing to understand,
+    learn and do better.
+
+    <br><br>
+
+    If you feel comfortable, could we have one calm conversation
+    and consider giving this connection another chance?
+
+    <br><br>
+
+    No promises, no pressure, no expectations.
+    Just two people getting to know each other.
   </p>
 
-  <p style="font-style:italic">
-    There’s no pressure to answer a certain way.
-    I just wanted you to know how I feel.
-  </p>
-
-  <div class="proposal-actions">
-    <button class="pill yes" onclick="answer('yes')">
-      ♥ Yes, let’s give this a chance
-    </button>
-
-    <button class="pill maybe" onclick="answer('maybe')">
-      ♡ I need a little more time
-    </button>
-
-    <button class="pill reject" onclick="answer('no')">
-      💔 No, I don’t feel the same way
-    </button>
-  </div>
+  <button class="reconsider-btn" id="reconsiderBtn"
+          onclick="requestReconsider()">
+    ♥ I'm willing to reconsider
+  </button>
 
   <div class="response" id="response" aria-live="polite"></div>
 
-  <p class="privacy-note">
-    Your choice will be submitted to Harsha at
-    harsha4480@gmail.com. Please only submit when you’re comfortable.
+  <p class="small-note">
+    Only click if this is genuinely what you want.
+    There is no obligation to respond.
+    I will respect your decision either way.
   </p>
+
 </section>
 
 <footer class="footer">
-  Made with love, especially for Shree Raksha
-  <span style="color:#d8325b">♥</span>
-  <br>A little page for someone very special.
+  Made with sincerity and a little hope ♥
+  <br><br>
+  Harsha
 </footer>
 
 <script>
+
 const EMAIL_TO = "harsha4480@gmail.com";
 
-async function answer(choice) {
-  const responses = {
-    yes: {
-      response: "Yes, let's give this a chance",
-      message:
-        "Thank you for telling me how you feel. I’m happy to take this one step at a time with you. ♥"
-    },
+async function requestReconsider() {
 
-    maybe: {
-      response: "I need a little more time",
-      message:
-        "That’s completely okay. Take the time you need; I respect your feelings and your pace. ♡"
-    },
+  const btn = document.getElementById("reconsiderBtn");
+  const response = document.getElementById("response");
 
-    no: {
-      response: "No, I don’t feel the same way",
-      message:
-        "Thank you for being honest with me. I respect your feelings and your decision. You don’t owe me an explanation. ♥"
-    }
-  };
+  btn.disabled = true;
+  btn.textContent = "Thank you for sharing your feelings ♥";
 
-  const selected = responses[choice];
-  if (!selected) return;
-
-  const el = document.getElementById("response");
-  el.textContent = "Submitting your response…";
+  response.textContent = "Sending your response...";
 
   const submittedAt = new Date().toLocaleString();
 
   const form = new FormData();
-  form.append("_subject", "Shree Raksha website response");
+
+  form.append("_subject", "Raksha - Reconsideration Response");
   form.append("_template", "table");
   form.append("_captcha", "false");
-  form.append("Response", selected.response);
+  form.append("Response", "Raksha is willing to reconsider.");
   form.append("Submitted at", submittedAt);
-  form.append("Website URL", window.location.href);
+  form.append("Website", window.location.href);
 
   try {
+
     const res = await fetch(
       "https://formsubmit.co/ajax/" + EMAIL_TO,
       {
         method: "POST",
         body: form,
-        headers: { "Accept": "application/json" }
+        headers: {
+          "Accept": "application/json"
+        }
       }
     );
 
-    const data = await res.json().catch(() => ({}));
+    const data = await res.json();
 
-    if (
-      !res.ok ||
-      !(data.success === true || data.success === "true")
-    ) {
-      throw new Error("Email submission could not be confirmed.");
+    if (!res.ok ||
+        !(data.success === true || data.success === "true")) {
+      throw new Error("Email could not be confirmed.");
     }
 
-    el.textContent =
-      selected.message +
-      " Your response was accepted by the email service. ♥";
+    response.textContent =
+      "Thank you, Raksha. We can take things slowly. ♥";
 
-  } catch (err) {
-    console.error("Form submission error:", err);
+  } catch (error) {
 
-    el.textContent = selected.message;
+    console.error(error);
+
+    response.textContent =
+      "Thank you for letting me know. ♥";
 
     const link = document.createElement("a");
 
     link.href = "mailto:" + EMAIL_TO +
       "?subject=" +
-      encodeURIComponent("Shree Raksha website response") +
+      encodeURIComponent("Raksha - Reconsideration Response") +
       "&body=" +
       encodeURIComponent(
-        "Shree Raksha's response: " + selected.response +
-        "\nSubmitted at: " + submittedAt +
+        "Raksha is willing to reconsider.\n" +
+        "Submitted at: " + submittedAt +
         "\nWebsite: " + window.location.href
       );
 
-    link.textContent = "Email Harsha about this response";
+    link.textContent = "Notify Harsha by email";
 
     link.style.cssText =
-      "display:inline-block;margin:12px;padding:10px 16px;" +
-      "background:#fff4f3;color:#741632;border-radius:20px;" +
-      "font:14px Poppins,sans-serif";
+      "display:inline-block;margin:15px;color:white;" +
+      "text-decoration:underline;font:14px Poppins,sans-serif";
 
-    el.appendChild(document.createElement("br"));
-    el.appendChild(link);
+    response.appendChild(document.createElement("br"));
+    response.appendChild(link);
   }
+
 }
+
 </script>
 
 </body>
